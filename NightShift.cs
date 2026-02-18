@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -27,8 +28,9 @@ class NightShift : Form
         Opacity = 0;
 
         trayIcon = new NotifyIcon();
-        trayIcon.Icon = CreateMoonIcon();
+        trayIcon.Icon = LoadIcon();
         trayIcon.Text = "Night Shift";
+        this.Icon = trayIcon.Icon;
         trayIcon.Visible = true;
 
         keepAwakeItem = new MenuItem("Keep System Awake", OnToggleAwake);
@@ -102,8 +104,17 @@ class NightShift : Form
         timer.Start();
     }
 
-    static Icon CreateMoonIcon()
+    static Icon LoadIcon()
     {
+        // Try to load the .ico file from next to the exe
+        string exeDir = Path.GetDirectoryName(
+            System.Reflection.Assembly.GetExecutingAssembly().Location);
+        string icoPath = Path.Combine(exeDir, "nightshift.ico");
+
+        if (File.Exists(icoPath))
+            return new Icon(icoPath, 32, 32);
+
+        // Fallback: generate a simple moon icon
         var bmp = new Bitmap(32, 32);
         using (var g = Graphics.FromImage(bmp))
         {

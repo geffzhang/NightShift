@@ -1,6 +1,12 @@
 # Night Shift
 
-Let your AI agents work through the night while you sleep in a dark room.
+<p align="center">
+  <img src="logo.png" alt="Night Shift" width="200">
+</p>
+
+<p align="center">
+  Let your AI agents work through the night while you sleep in a dark room.
+</p>
 
 A tiny app that turns off your monitors and keeps your machine awake — built for people running [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Cowork](https://claude.com/blog/cowork-research-preview), [OpenClaw](https://github.com/anthropics/openclaw), and other AI coding agents that need hours of uninterrupted runtime.
 
