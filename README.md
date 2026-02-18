@@ -2,7 +2,7 @@
 
 Let your AI agents work through the night while you sleep in a dark room.
 
-A tiny app that turns off your monitors and keeps your machine awake — built for people running [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Claude Code Work](https://docs.anthropic.com/en/docs/claude-code), [OpenClaw](https://github.com/anthropics/openclaw), and other AI coding agents that need hours of uninterrupted runtime.
+A tiny app that turns off your monitors and keeps your machine awake — built for people running [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Cowork](https://claude.com/blog/cowork-research-preview), [OpenClaw](https://github.com/anthropics/openclaw), and other AI coding agents that need hours of uninterrupted runtime.
 
 ![Windows](https://img.shields.io/badge/platform-Windows-blue)
 ![macOS](https://img.shields.io/badge/platform-macOS-lightgrey)
@@ -11,7 +11,7 @@ A tiny app that turns off your monitors and keeps your machine awake — built f
 
 ## The Problem
 
-You kick off a long-running AI agent session — a multi-file refactor, an overnight code generation task, a batch of Claude Code Work jobs — and you want to go to sleep. But if your machine goes to sleep, your agents die mid-task. And if you leave the monitors on, your bedroom is lit up like a data center.
+You kick off a long-running AI agent session — a multi-file refactor, an overnight code generation task, a batch of Cowork jobs — and you want to go to sleep. But if your machine goes to sleep, your agents die mid-task. And if you leave the monitors on, your bedroom is lit up like a data center.
 
 **Night Shift** solves both problems: monitors off, machine awake, agents keep running.
 
